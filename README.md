@@ -28,7 +28,8 @@ function mainpage(){
 $r->router('GET', '/', 'mainpage');
 
 otherfile.php
-```
+
+----
 namespace Tmp;
 class otherfile{
   public function mainpage(){
@@ -38,7 +39,8 @@ class otherfile{
     echo "success access GET or POST with /helloword";
   }
 }
-```
+---
+
 $r->router('GET', '/', '\Tmp\otherfile@mainpage');
 $r->router(['GET', 'POST'], '\Tmp\otherfile::helloworld');
 
